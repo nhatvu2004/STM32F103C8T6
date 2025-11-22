@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"debug\startup_stm32f103xb.o"
+"debug\main.o"
+"debug\stm32f1xx_it.o"
+"debug\stm32f1xx_hal_msp.o"
+"debug\stm32f1xx_hal_gpio_ex.o"
+"debug\stm32f1xx_hal.o"
+"debug\stm32f1xx_hal_rcc.o"
+"debug\stm32f1xx_hal_rcc_ex.o"
+"debug\stm32f1xx_hal_gpio.o"
+"debug\stm32f1xx_hal_dma.o"
+"debug\stm32f1xx_hal_cortex.o"
+"debug\stm32f1xx_hal_pwr.o"
+"debug\stm32f1xx_hal_flash.o"
+"debug\stm32f1xx_hal_flash_ex.o"
+"debug\stm32f1xx_hal_exti.o"
+"debug\system_stm32f1xx.o"
+--strict --scatter "DEBUG\DEBUG.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DEBUG.map" -o DEBUG\DEBUG.axf

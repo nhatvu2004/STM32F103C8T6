@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"lcd_lib\startup_stm32f103xb.o"
+"lcd_lib\main.o"
+"lcd_lib\stm32f1xx_it.o"
+"lcd_lib\stm32f1xx_hal_msp.o"
+"lcd_lib\stm32f1xx_hal_gpio_ex.o"
+"lcd_lib\stm32f1xx_hal.o"
+"lcd_lib\stm32f1xx_hal_rcc.o"
+"lcd_lib\stm32f1xx_hal_rcc_ex.o"
+"lcd_lib\stm32f1xx_hal_gpio.o"
+"lcd_lib\stm32f1xx_hal_dma.o"
+"lcd_lib\stm32f1xx_hal_cortex.o"
+"lcd_lib\stm32f1xx_hal_pwr.o"
+"lcd_lib\stm32f1xx_hal_flash.o"
+"lcd_lib\stm32f1xx_hal_flash_ex.o"
+"lcd_lib\stm32f1xx_hal_exti.o"
+"lcd_lib\system_stm32f1xx.o"
+"lcd_lib\lcd_1.o"
+--strict --scatter "LCD_LIB\LCD_LIB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_LIB.map" -o LCD_LIB\LCD_LIB.axf

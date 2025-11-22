@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"pwm_sg90s\startup_stm32f103xb.o"
+"pwm_sg90s\main.o"
+"pwm_sg90s\stm32f1xx_it.o"
+"pwm_sg90s\stm32f1xx_hal_msp.o"
+"pwm_sg90s\stm32f1xx_hal_gpio_ex.o"
+"pwm_sg90s\stm32f1xx_hal_tim.o"
+"pwm_sg90s\stm32f1xx_hal_tim_ex.o"
+"pwm_sg90s\stm32f1xx_hal.o"
+"pwm_sg90s\stm32f1xx_hal_rcc.o"
+"pwm_sg90s\stm32f1xx_hal_rcc_ex.o"
+"pwm_sg90s\stm32f1xx_hal_gpio.o"
+"pwm_sg90s\stm32f1xx_hal_dma.o"
+"pwm_sg90s\stm32f1xx_hal_cortex.o"
+"pwm_sg90s\stm32f1xx_hal_pwr.o"
+"pwm_sg90s\stm32f1xx_hal_flash.o"
+"pwm_sg90s\stm32f1xx_hal_flash_ex.o"
+"pwm_sg90s\stm32f1xx_hal_exti.o"
+"pwm_sg90s\system_stm32f1xx.o"
+--strict --scatter "PWM_SG90S\PWM_SG90S.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_SG90S.map" -o PWM_SG90S\PWM_SG90S.axf
